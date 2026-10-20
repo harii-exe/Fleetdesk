@@ -39,6 +39,9 @@ FleetDesk includes a secure development seed dataset featuring 11 App Users, 15 
 
 ## ⚡ Quick Start Instructions
 
+### Publish a public demo website
+Follow the beginner-friendly [online deployment guide](DEPLOYMENT_VERCELE.md). The repository includes a Render setup file, so you can connect the GitHub repo in Render and publish without changing the app code.
+
 ### Running the Operational Web Application:
 To run the server and open the client portal:
 ```powershell
@@ -46,10 +49,10 @@ To run the server and open the client portal:
 cd C:\Users\harig\.gemini\antigravity\scratch\fleetdesk
 
 # 2. Seed or reset the database (Already seeded!)
-agy-node server/db/seed.js
+node server/db/seed.js
 
 # 3. Launch the FleetDesk HTTP server
-agy-node server/src/app.js
+node server/src/app.js
 ```
 The server will start listening at:
 - **Web Application Portal:** `http://localhost:3000/`
@@ -57,7 +60,7 @@ The server will start listening at:
 
 ### Running the 22 Automated QA Tests:
 ```powershell
-agy-node server/tests/suite.js
+node server/tests/suite.js
 ```
 *Result: 22 / 22 Tests Passed (100% Pass Rate).*
 

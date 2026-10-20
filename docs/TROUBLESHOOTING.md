@@ -8,7 +8,7 @@
 - **Solution:** Specify a different port when launching:
   ```powershell
   $env:PORT = "3050"
-  agy-node server/src/app.js
+  node server/src/app.js
   ```
   Or identify and terminate the process holding port 3000:
   ```powershell
@@ -21,7 +21,7 @@
 - **Cause:** Multiple concurrent writer processes on `fleetdesk.db`.
 - **Solution:** Reset the database by executing:
   ```powershell
-  agy-node -e "const { resetDatabase } = require('./server/db/connection'); const { seedDatabase } = require('./server/db/seed'); resetDatabase(); seedDatabase();"
+  node -e "const { resetDatabase } = require('./server/db/connection'); const { seedDatabase } = require('./server/db/seed'); resetDatabase(); seedDatabase();"
   ```
 
 ### 3. Missing Authorization Token / 401 Unauthorized

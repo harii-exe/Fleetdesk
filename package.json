@@ -4,9 +4,9 @@
   "description": "FleetDesk — Smart Vehicle Rental & Fleet Management System (KTU PBCST304 2024 Scheme)",
   "main": "server/src/app.js",
   "scripts": {
-    "start": "agy-node server/src/app.js",
-    "seed": "agy-node server/db/seed.js",
-    "test": "agy-node server/tests/suite.js"
+    "start": "node server/src/app.js",
+    "seed": "node server/db/seed.js",
+    "test": "node server/tests/suite.js"
   },
   "keywords": [
     "fleet-management",

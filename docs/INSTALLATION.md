@@ -20,10 +20,10 @@
 cd C:\Users\harig\.gemini\antigravity\scratch\fleetdesk
 
 # 2. Initialize and Seed the Database
-agy-node server/db/seed.js
+node server/db/seed.js
 
 # 3. Start the Web Server
-agy-node server/src/app.js
+node server/src/app.js
 ```
 
 Open your web browser and navigate to:
