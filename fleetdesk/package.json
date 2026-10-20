@@ -1,0 +1,22 @@
+{
+  "name": "fleetdesk",
+  "version": "1.0.0",
+  "description": "FleetDesk — Smart Vehicle Rental & Fleet Management System (KTU PBCST304 2024 Scheme)",
+  "main": "server/src/app.js",
+  "scripts": {
+    "start": "agy-node server/src/app.js",
+    "seed": "agy-node server/db/seed.js",
+    "test": "agy-node server/tests/suite.js"
+  },
+  "keywords": [
+    "fleet-management",
+    "vehicle-rental",
+    "ktu-pbl",
+    "spring-boot",
+    "sqlite",
+    "mysql",
+    "enterprise-erp"
+  ],
+  "author": "Antigravity Engineering for KTU B.Tech CSE",
+  "license": "MIT"
+}
